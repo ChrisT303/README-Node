@@ -14,14 +14,8 @@ const questions =
     },
     {
         type: 'input',
-        message: 'What are your table of contents?',
-        name: 'tableOfCcontents',
-        validate: (value) => {if (value){return true} else {return 'Need value to move forward'}}
-    },
-    {
-        type: 'input',
         message: 'How do you install your app?',
-        name: 'instalation',
+        name: 'installation',
         validate: (value) => {if (value){return true} else {return 'Need value to move forward'}}
     },
     {
