@@ -2,7 +2,18 @@ const { writeFile } = require('fs');
 
 function generateMarkdown(data) {
   let output = `
-# ${data.title}
+
+#  ${data.title}
+## ${data.description}
+## ${data.tableOfContents}
+## ${data.instalation}
+## ${data.usage}
+## ${data.license}
+## ${data.contributing}
+## ${data.tests}
+## ${data.questions}
+### Contact:
+
 
 `;
 
