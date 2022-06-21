@@ -26,8 +26,9 @@ ${data.contributing}
 ## Tests
 ${data.tests}
 ## Questions
+### Contact me by clicking the following links:
 ${data.questions}
-### Contact
+
 
 
 `;
