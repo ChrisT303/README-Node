@@ -1,12 +1,9 @@
-const { writeFile } = require('fs');
 
-function generateMarkdown(data) {
-  let output = `
 
 #  Project Title
-${data.title}
+Day Planner
 ## Project Description
-${data.description}
+To plan your day
 ## Table of Contents
 * [Project Description](#description)
 * [Installation](#installation)
@@ -16,26 +13,18 @@ ${data.description}
 * [Contributors](#contributing)
 * [Questions](#questions)
 ## Installation
-${data.installation}
+Testing
 ## Usage
-${data.usage}
+Testing
 ## Licesne
-${data.license}
+The Mit License
 ## Contributors
-${data.contributing}
+Not at this time
 ## Tests
-${data.tests}
+testing
 ## Questions
 ### Contact me by clicking the below links:
-${data.questions}
+deftonechris
 
 
 
-`;
-
-  writeFile('./utils/README.md', output, err => { if (err) throw err });
-}
-
-
-
-module.exports = generateMarkdown;
