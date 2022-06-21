@@ -1,13 +1,13 @@
 const { writeFile } = require('fs');
 let badge = license => {
-  license == 'The MIT License'
-  ? `![The MIT License](https://img.shields.io/badge/License-MIT-green)`
+  return license == 'The MIT License'
+  ?`![The MIT License](https://img.shields.io/badge/license-MIT-green)`
   : license == 'The GPL License'
-  ? `![The GPL License](https://img.shields.io/badge/License-GPL-purple)`
+  ? `![The GPL License](https://img.shields.io/badge/license-GPL-purple)`
   : license == 'Apache License'
-  ? `![Apache License](https://img.shields.io/badge/License-Apache-yellow)`
+  ? `![Apache License](https://img.shields.io/badge/license-Apache-yellow)`
   : license == 'BSD License'
-  ? `![BSD License](https://img.shields.io/badge/License-BSD-blue)`
+  ? `![BSD License](https://img.shields.io/badge/license-BSD-blue)`
   : '';
 };
 

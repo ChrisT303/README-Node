@@ -28,8 +28,8 @@ const questions =
         type: 'list',
         message: 'Do you have a license to add?',
         name: 'license',
-        choices: ['The MIT License', 'The GPL License', 'Apache License', 'BSD License', 'N/A'  ],
-        validate: (value) => {if (value){return true} else {return 'Need value to move forward'}}
+        choices: ['The MIT License', 'The GPL License', 'Apache License', 'BSD License', 'N/A'],
+        // validate: (value) => {if (value){return true} else {return 'Need value to move forward'}}
     },
     {
         type: 'input',
