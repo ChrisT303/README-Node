@@ -28,7 +28,7 @@ const questions =
         type: 'list',
         message: 'Do you have a license to add?',
         name: 'license',
-        choices: ['The Mit License', 'The GPL License', 'Apache License', 'BSD License', 'N/A'  ],
+        choices: ['The MIT License', 'The GPL License', 'Apache License', 'BSD License', 'N/A'  ],
         validate: (value) => {if (value){return true} else {return 'Need value to move forward'}}
     },
     {
@@ -47,6 +47,12 @@ const questions =
         type: 'input',
         message: 'What is your GitHub username?',
         name: 'questions',
+        validate: (value) => {if (value){return true} else {return 'Need value to move forward'}}
+    },
+    {
+        type: 'input',
+        message: 'What is your email address?',
+        name: 'email',
         validate: (value) => {if (value){return true} else {return 'Need value to move forward'}}
     }
 ];

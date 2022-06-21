@@ -1,10 +1,22 @@
 const { writeFile } = require('fs');
+let badge = license => {
+  license == 'The MIT License'
+  ? `![The MIT License](https://img.shields.io/badge/License-MIT-green)`
+  : license == 'The GPL License'
+  ? `![The GPL License](https://img.shields.io/badge/License-GPL-purple)`
+  : license == 'Apache License'
+  ? `![Apache License](https://img.shields.io/badge/License-Apache-yellow)`
+  : license == 'BSD License'
+  ? `![BSD License](https://img.shields.io/badge/License-BSD-blue)`
+  : '';
+};
 
 function generateMarkdown(data) {
   let output = `
 
-#  Project Title
-${data.title}
+# ${data.title}
+${badge(data.license)}
+
 ## Project Description
 ${data.description}
 ## Table of Contents
@@ -27,8 +39,8 @@ ${data.contributing}
 ${data.tests}
 ## Questions
 ### Contact me by clicking the below links:
-${data.questions}
-
+[Github Link](https://github.com/${data.questions})
+[Email Link](mailto:${data.email})
 
 
 `;
