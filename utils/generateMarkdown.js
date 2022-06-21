@@ -31,8 +31,6 @@ ${data.description}
 ${data.installation}
 ## Usage
 ${data.usage}
-## Licesne
-${data.license}
 ## Contributors
 ${data.contributing}
 ## Tests
