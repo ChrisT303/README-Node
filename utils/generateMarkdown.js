@@ -11,6 +11,7 @@ let badge = license => {
   : '';
 };
 
+
 function generateMarkdown(data) {
   let output = `
 
@@ -23,9 +24,9 @@ ${data.description}
 * [Project Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Contributors](#contributing)
 * [Tests](#tests)
 * [License](#license)
-* [Contributors](#contributing)
 * [Questions](#questions)
 ## Installation
 ${data.installation}
@@ -35,10 +36,13 @@ ${data.usage}
 ${data.contributing}
 ## Tests
 ${data.tests}
+##License
+#####This project is licensed under
+${data.license}
 ## Questions
-### Contact me by clicking the below links:
-[Github Link](https://github.com/${data.questions})
-[Email Link](mailto:${data.email})
+Contact me by clicking the below links:
+* [Github Link](https://github.com/${data.questions})
+* [Email Link](mailto:${data.email})
 
 
 `;
