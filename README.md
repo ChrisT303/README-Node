@@ -30,3 +30,4 @@ Contact me by clicking the below links:
 * [Email Link](mailto:deftonechris@msn.com)
 
 
+![Untitled_ Jun 26, 2022 6_23 PM (3)](https://user-images.githubusercontent.com/103149149/175840478-a13f8f5d-8ac6-4d56-b242-e578d1e94c46.gif)
