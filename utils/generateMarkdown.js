@@ -13,6 +13,7 @@ let badge = license => {
 
 
 function generateMarkdown(data) {
+   
   let output = `
 
 # ${data.title}
